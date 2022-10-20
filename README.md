@@ -3,7 +3,7 @@
 _NOTE: THIS IS A DRAFT; MAKE A PR BEFORE IT BECOMES FINAL!_
 
 _This document is a work in progress. This document assumes familiarity with
-the current workings of cosmoshub4 as of Oct 11th 2022. What is described here
+the current workings of cosmoshub4 as of Oct 11th, 2022. What is described here
 are modifications to what already is. This clause will be removed with future
 revisions, and the corresponding parts of the document updated with a full
 description of the constitution of the hub._
@@ -21,11 +21,11 @@ ordain and establish this Constitution for the Cosmos Hub.
 Cosmos is the interchain network composed of many sovereign zones connected by
 IBC.
 
-A zone is a blockchain or set of blockchains that are self governed by a single
+A zone is a blockchain or set of blockchains that are self-governed by a single
 well-defined governing body or bodies.
 
 IBC is short for Interchain Blockchain Communication, and includes all
-protocols that allow blockchains to communicate state or messages with other
+protocols that allow blockchains to communicate states or messages with other
 blockchains.
 
 ICS is short for Interchain Security, and includes all protocols that allow the
@@ -58,7 +58,7 @@ Other sovereign zones that are completely or partially secured by Cosmos Hub
 ICS by definition have their own governance mechanism, and the Cosmos Hub
 principally enables and follows the will of the governance of such sovereign
 zones with regards to the pegged tokens originating from said zones, except in
-well defined exceptional circumstances that involve bugs, theft, or harm to the
+well-defined exceptional circumstances that involve bugs, theft, or harm to the
 Cosmonauts of the Cosmos ecosystem.
 
 ### Rule 3. General Mission and Objectives
@@ -83,7 +83,7 @@ citizenship is granted in an autonomous manner.
 
 ### Rule 5. Rights, Liberties, and Obligations in the Cosmos Hub
 
-The Liberty and Property of all Cosmonauts engaging in the Cosmos Hub is hereby
+The Liberty and Property of all Cosmonauts engaging in the Cosmos Hub are hereby
 guaranteed. Any restriction to the Liberty and Property of Citizens on the
 Cosmos Hub can be done only through the Cosmos Hub's governance.
 
@@ -123,12 +123,12 @@ weeks of voting after the quorum has been met.
 
 ### Rule 8. Air-drops and forks
 
-Every Cosmonault allows any Cosmonaut to create full or partial airdrops of new
+Every Cosmonaut allows any Cosmonaut to create full or partial airdrops of new
 tokens to any chain using the distribution of any token on the Cosmos Hub.
 
 Every Citizen allows any Cosmonaut to modify their pro-rata of their airdrop
 portion by partial or full slashing based on their cryptographic voting
-activity according to well defined principles.
+activity according to well-defined principles.
 
 ### Rule 9. The Interchain Security (ICS) System
 
@@ -157,9 +157,9 @@ the following regions;
 The Cosmos Hub governance may establish one or more transparent and accountable
 Treasury DAOs by simple majority vote.
 
-The operations of the Treasury DAO must operate on an ICS secured zone outside
+The operations of the Treasury DAO must operate on an ICS-secured zone outside
 of the hub. As an exception, the tokens of the Treasury DAO may reside on the
-the Cosmos Hub as a m-of-n multisig account where n is at least 3 and m is at
+the Cosmos Hub as an m-of-n multisig account where n is at least 3 and m is at
 least 1/2 of n, where each signatory is an authorized member of the Treasury
 DAO and Citizen of the Cosmos Hub.
 
@@ -172,7 +172,7 @@ To enable the well-functioning of Treasury DAOs and the separation of powers in
 the utmost interest of the Cosmos Hub, each member can hold just one type of
 role within each Treasury DAO.
 
-The members of the DAO must perform efficiently in their role in line with
+The members of the DAO must perform efficiently in their roles in line with
 their job description. They are accountable to each DAO’s Oversight Committee
 and the Hub Governance. They can be dismissed from their functions by a
 two-thirds majority vote by the DAO’s Oversight Committee or the Governance
@@ -252,7 +252,7 @@ of a special inflation governance proposal type.
 
 The inflation of additional ATOMs or PHOTONs to the Community Pool or
 designated Treasury DAO require a special inflation proposal type, and will
-require a two thirds supermajority instead of the default 50%. 
+require a two-thirds supermajority instead of the default 50%. 
 
 The special inflation proposal can include a description of the purpose of the
 inflation, but cannot include any other modifications to the Cosmos Hub or its
@@ -336,7 +336,7 @@ ATOM1 framework. The gno.land prop69 #exitdrop is a demonstration of value-add
 to the Cosmos Hub, as it will provide Gnolang smart contracts while IBC pegging
 to the Cosmos Hub for tokens.
 
-Using ICS, it should be possible to run new Gnolang VM powered zones secured by
+Using ICS, it should be possible to run new Gnolang VM-powered zones secured by
 the Cosmos Hub, but also IBC connected to the gno.land chain for importing
 logic hosted on the gno.land "github" (and paying gas fees & license fees to
 each).
@@ -344,12 +344,12 @@ each).
 ### The need for hubs
 
 Say there are 10,000 zones. Say a zone fails and it requires manual intervention.
-With 10,000 IBC connections you require 10,000 zones to all agree on recovery
+With 10,000 IBC connections you require 10,000 zones to all agree on a recovery
 procedure; will never happen. But a zone connected to a more secure hub will be
 protected when it needs intervention.
 
 Another need for hubs; uniformity of guarantees. You need a hub to coordinate
-shard zones where governance/policy and staking gets applied to all shards.
+shard zones where governance/policy and staking get applied to all shards.
 Otherwise, you don’t have one system of guarantees, you have many independent
 chains. Need to scale sendtx, might as well ICS.
 
@@ -360,11 +360,11 @@ just think we should do it on ATOM1, and use PHOTONs. That is, ATOM2 ->
 PHOTON1.
 
 Pretty much all the proposals in the ATOM2 paper can be implemented on top of
-ATOM1 (see github link above for draft) on the PHOTON token on separate zones
+ATOM1 (see GitHub link above for draft) on the PHOTON token on separate zones
 implemented permissionlessly. The Allocator service zone could be implemented
 by anyone and secured by ICS, and use PHOTONs as the counterparty token in
 AMMs. The Scheduler likewise can be implemented permissionlessly and use
-PHOTONs as payment token. Zones can choose to use whatever scheduling or
+PHOTONs as the payment token. Zones can choose to use whatever scheduling or
 allocation system they want. ATOM1 allows governance to approve of inflation of
 PHOTONs for any particular purpose such as this.
 
@@ -374,14 +374,14 @@ are alternative ways to implement the Scheduler that is different than ABCI++;
 it can be implemented as an extension to ABCI to allow Tendermint to allocate
 different priority mempools for different transaction types. This isn’t what is
 proposed in ABCI++ but IMO the first step to solving pay-for-priority. We don’t
-have to solve this by commitee, we can let the free market decide what solution
+have to solve this by committee, we can let the free market decide what solution
 is actually preferred.
 
 The proposed treasury inflation is ludicrously high. - there was another tweet
 by someone extolling the virtues of treasury funding, of how 100,000 ATOMs were
 able to accomplish so much. The ATOM2.0 proposal creates FIVE HUNDRED (500)
-TIMES as much to go into treasury in the first year alone. Not only are there
-enough funds within the ICF alone to complete the featureset of the Cosmos Hub,
+TIMES as much to go into the treasury in the first year alone. Not only are there
+enough funds within the ICF alone to complete the feature set of the Cosmos Hub,
 it is certainly unnecessary to inflate so much in addition. No single
 centralized entity can responsibly distribute such funds in a responsible way.
 In fact, it will lead to failure. Queue all the crypto projects that raised so
@@ -395,10 +395,10 @@ itself.
 
 Described in the constitution also are a way for the ICF to defer to a Treasury
 DAO for execution and decisions, while still maintaining control over the
-distribution of funds via a m-of-n multisignature account on the hub, thereby
+distribution of funds via an m-of-n multisignature account on the hub, thereby
 having ultimate veto power.
 
-Also, the tax system may be used to allocation a portion of ATOM and PHOTON
+Also, the tax system may be used to allocate a portion of ATOM and PHOTON
 inflation to fund the common pool.
 
 ### About security, and the need for ATOM/PHOTON separation
@@ -410,7 +410,7 @@ late. We can prevent future disasters.
 
 The staking ratio today on Ethereum PoS is 12%. With massive adoption, unless
 we have complete laymen involved in staking, and with ETH becoming money, the
-stake ratio should fall even lower, perhaps even to <1%. At that point it
+stake ratio should fall even lower, perhaps even to <1%. At that point, it
 becomes easy to coordinate a fund to take over the consensus process of the
 chain. PoW networks have two “tokens” the mining infrastructure (which can be
 bought or sold, and also is “inflationary”) and the coins themselves. This
@@ -449,17 +449,17 @@ accounts, so that is all that needs to be done.
 
 ### About consensus-driven investments
 
-Governance driven funding will fail, like central planning fails. - where-ever
+Governance-driven funding will fail, like central planning fails. - where-ever
 possible we should ensure that intelligence is preserved or amplified in
 decisions. The way to ensure that good decisions are rewarded and bad decisions
-punished, is to require individual decision makers to put skin in the game.
+punished, is to require individual decision-makers to put skin in the game.
 This is why innovation happens in the private sector, and why governance
 funding is seen as a corruption of private sector innovation, and why central
 government planning historically has led to failure. It turns the incentive
 model of individual merit, into a game of politics. This is true even when
-decision making is weighted by relative capital.
+decision-making is weighted by relative capital.
 
-We can see this clearly in the private sector investment world. The best
+We can see this clearly in the private sector investment world. The best-
 performing funds do not have their decisions made by weighted voting of LPs.
 Rather, the LPs are free to join and leave, while the investment thesis of each
 fund is maintained by select GPs. The ATOM2.0 tokenomics model is akin to
@@ -486,10 +486,10 @@ mark of the beast. As per the Book of Revelation,
 * The mark gives you sores (Revelation 16:2) // NOTE: have no fear about it
   even if you got the shot.
 
-How could it be that a two millenia old document can predict what is happening
+How could it be that a two millennia old document can predict what is happening
 today? Well, most people don't read the bible at all, and anyone can see the
 light and turn into a white-hat. It appears to me that the white-hats have
-shepherded the black-hats into following a script that ends up exposes them
+shepherded the black-hats into following a script that ends up exposing them
 when it is too late. And now the "true Christians" have indeed exposed the NWO
 agenda, and this awareness is growing exponentially.
 
@@ -505,7 +505,7 @@ having infiltrated government cabinets, also wants us to "own nothing and be
 happy".  If it isn't clear enough, their logo even includes a subtle 666.
 
 The fact of the matter is, we probably do want some regulatory system to deal
-with large scale theft of coins resulting from bugs or human error/malice. Even
+with large-scale theft of coins resulting from bugs or human error/malice. Even
 if such a regulatory system is not imposed upon any zones, zones may want to
 voluntarily adopt some kind of regulatory policy. And zones probably want to
 enforce these policies across zones that choose to adopt the same policies.
@@ -518,7 +518,7 @@ perspective of the Hub, this is still a permissionless, voluntary system.
 When it comes to transactions on the hub, and transactions from zones to the
 hub, we should adopt the most minimal regulatory system. We could arguably do
 nothing--until it is too late, and we learn our lesson that we need *something*
-in the case of large scale theft from malice or bugs. The minimal nonzero
+in the case of large-scale theft from malice or bugs. The minimal nonzero
 policy we can adopt, is to enable one or more bonded DAOs to designate one or
 more addresses as being affected, with full justification, to temporarily
 freeze those coins, where the coins will unfreeze automatically until the hub's
@@ -527,7 +527,7 @@ to determine the facts. Something along these lines is a minimal regulatory
 system. Also, it is probably sensible for the hub to implement a kind of
 delayed transfer system, so that accounts with large token amounts can be
 protected by this regulatory system in the case of theft. Perhaps accounts can
-opt out of this transfer-delay protection.
+opt-out of this transfer-delay protection.
 
 The above minimal regulatory system still begs for a full system of checks and
 balances. That's another rabbit hole for another issue/document. The ATOM1
@@ -535,7 +535,7 @@ constitution hints at a system of checks and balances, but IMO it isn't
 complete yet, at least not in its current written form.
 
 The challenge is to (a) further refine and minimize the aforementioned hub
-internal regulatory policy, and (b) to define the inter-zone permissionless
+internal regulatory policy, and (b) define the inter-zone permissionless
 regulatory framework. With these implemented, the hub can ensure the rights to
 property, protect property in the case of theft, and allow zones to
 permissionlessly set their own policies. This is a critical
